@@ -29,7 +29,7 @@ module.exports = {
       filename: "index.html",
       title: "Nirvana SWA - Berta Theo",
       chunks: ["index"],
-      // favicon: "src/assets/images/favicon.png",
+      favicon: "src/assets/images/favicon.png",
     }),
   ],
 };

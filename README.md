@@ -1,1 +1,1 @@
-# nirvana-swa-svelte
+# Nirvana Swa Svelte
