@@ -1,1 +1,1 @@
-# Nirvana Swa Svelte
+# Rick and Morty App with Svelte

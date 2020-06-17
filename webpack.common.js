@@ -21,13 +21,34 @@ module.exports = {
         test: /\.svelte$/i,
         use: "svelte-loader",
       },
+      // {
+      //   test: /\.m?js$/,
+      //   exclude: /(node_modules|bower_components)/,
+      //   use: {
+      //     loader: "babel-loader",
+      //     options: {
+      //       presets: ["@babel/preset-env"],
+      //     },
+      //   },
+      // },
+      {
+        test: /\.(png|jpg|gif|svg)$/i,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 8192,
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
     new htmlWebpackPlugin({
       template: "src/index.html",
       filename: "index.html",
-      title: "Nirvana SWA - Berta Theo",
+      title: "Rick and Morty - Svelte",
       chunks: ["index"],
       favicon: "src/assets/images/favicon.png",
     }),
