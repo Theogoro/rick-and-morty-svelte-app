@@ -8,7 +8,7 @@ const entry = {
 module.exports = {
   entry: entry,
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "public"),
     filename: "js/[name].js",
   },
   devServer: {
@@ -21,16 +21,6 @@ module.exports = {
         test: /\.svelte$/i,
         use: "svelte-loader",
       },
-      // {
-      //   test: /\.m?js$/,
-      //   exclude: /(node_modules|bower_components)/,
-      //   use: {
-      //     loader: "babel-loader",
-      //     options: {
-      //       presets: ["@babel/preset-env"],
-      //     },
-      //   },
-      // },
       {
         test: /\.(png|jpg|gif|svg)$/i,
         use: [
