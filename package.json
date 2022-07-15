@@ -13,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "svelte": "^3.23.1"
+    "svelte": "^3.49.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
